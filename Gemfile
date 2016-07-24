@@ -12,9 +12,6 @@ gem 'bootstrap-sass', '~>3.3.4.1'
 
 gem 'autoprefixer-rails', '~>5.2.0'
 
-# # add in attempts to fix DEPRECATION WARNING: Sprockets method `register_engine` is deprecated.
-# gem 'sprockets', '3.6.3'
-
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -44,7 +41,8 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   gem 'rspec-rails', '3.2.3'
-
+  gem 'guard-rspec', require: false
+  gem 'spring-commands-rspec'
 end
 
 group :development do
